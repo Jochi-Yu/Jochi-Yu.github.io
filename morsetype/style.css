@@ -1,0 +1,57 @@
+@font-face{
+	font-family:'MorseCode';
+	src: url('MorseCode-Display_otf.woff2') format('woff2');
+	font-weight: 300;
+}
+
+@font-face{
+	font-family:'MorseCodeOutline';
+	src: url('MorseCode-Outline_otf.woff2') format('woff2');
+	font-weight: 400;
+}
+
+body{
+	/* this is the outermost element on your page*/
+	background: hsl(49, 100%, 97%);
+	font-family: 'MorseCode';
+	font-size: 100px;
+	color:hsl(342, 100%, 62%);
+}
+a{
+	color: hsl(339, 20%, 34%);
+}
+
+footer{
+	font-family:'Times New Roman';
+	font-size: 24px;
+	color: hsl(49, 100%, 97%);
+	letter-spacing: 0px
+}
+
+.section{
+	height: 1920px;
+	width: 100%;
+}
+
+#title{
+	background-color: hsl(351,86%,54%);
+	color: hsl(49, 100%, 97%);
+	font-size: 160pt;
+	letter-spacing: 6px
+}
+
+#intro{
+	background-color: hsl(351,86%,54%);
+	color: hsl(81,100%,47%);
+	font-size: 80pt
+}
+
+#specimen{
+	background-color: hsl(83,68%,47%);
+	color: hsl(354,83%,88%);
+}
+
+#glyph{
+	background-color: hsl(354,83%,88%);
+	color: hsl(49, 100%, 97%);
+}
