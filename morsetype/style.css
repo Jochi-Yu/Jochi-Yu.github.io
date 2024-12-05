@@ -10,12 +10,18 @@
 	font-weight: 400;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body{
 	/* this is the outermost element on your page*/
 	background: hsl(49, 100%, 97%);
 	font-family: 'MorseCode';
 	font-size: 100px;
 	color:hsl(342, 100%, 62%);
+	margin: 0;
 }
 a{
 	color: hsl(339, 20%, 34%);
@@ -28,16 +34,30 @@ footer{
 	letter-spacing: 0px
 }
 
+img{
+	max-width: 100%;
+	max-height: 66%;
+	padding-top: 280px;
+}
+
 .section{
-	height: 1920px;
+	height: 1080px;
 	width: 100%;
+	border: 3px solid black;
+	margin: 0
+}
+
+.outline{
+	font-family: 'MorseCodeOutline'
 }
 
 #title{
 	background-color: hsl(351,86%,54%);
 	color: hsl(49, 100%, 97%);
 	font-size: 160pt;
-	letter-spacing: 6px
+	letter-spacing: 6px;
+	padding-right: 100px
+	padding-bottom: 55px;
 }
 
 #intro{
