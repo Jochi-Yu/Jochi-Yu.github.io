@@ -43,8 +43,12 @@ img{
 .section{
 	height: 1080px;
 	width: 100%;
-	border: 3px solid black;
+	border: 1px solid black;
 	margin: 0
+}
+.container {
+
+	grid-template-rows:50px 1fr 30px;
 }
 
 .outline{
@@ -56,14 +60,12 @@ img{
 	color: hsl(49, 100%, 97%);
 	font-size: 160pt;
 	letter-spacing: 6px;
-	padding-right: 100px
-	padding-bottom: 55px;
 }
 
 #intro{
 	background-color: hsl(351,86%,54%);
 	color: hsl(81,100%,47%);
-	font-size: 80pt
+	font-size: 65pt
 }
 
 #specimen{
