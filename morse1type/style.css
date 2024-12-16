@@ -4,31 +4,45 @@
 	font-weight: 300;
 }
 
-@font-face{
-	font-family:'MorseCodeOutline';
-	src: url('MorseCode-Outline_otf.woff2') format('woff2');
-	font-weight: 400;
+
+/* Body with padding around the page */
 body {
-    margin: 0;
-    overflow: hidden;
-    background-color: #f0f0f0;
+    padding: 15px;
+    background-color: #f9f9f9; /* Light background */
+    
+/* Container to hold the grid layout */
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-gap: 20px; /* Space between grid items */
 }
 
-.picture {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    pointer-events: none;
-    animation: fade-out 2s ease forwards;
+/* Gallery item styling */
+.gallery-item {
+    background-color: #ffffff; /* White background for each item */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.2s ease-in-out;
 }
 
-@keyframes fade-out {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+.gallery-item img {
+    width: 100%; /* Image fills the container */
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px 8px 0 0;
+}
+
+.gallery-item p {
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Hover effect for each gallery item */
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

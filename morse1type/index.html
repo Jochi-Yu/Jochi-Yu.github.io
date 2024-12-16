@@ -3,40 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mouse Move Pictures</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Image Gallery</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<script>
-    console.log("Mouse event listener added");
-    document.addEventListener('mousemove', (event) => {
-        const imgUrls = [
-            'morse1type/egg-2.png',
-            'morse1type/platner-2.png',
-            'morse1type/stackingchair-2.png',
-            'morse1type/thonet-2.png'
-        ];
-
-        // Create a new picture element
-        const picture = document.createElement('div');
-        picture.classList.add('picture');
-
-        // Set the picture's position and background image
-        picture.style.left = `${event.pageX}px`;
-        picture.style.top = `${event.pageY}px`;
-        picture.style.backgroundImage = `url('${imgUrls[Math.floor(Math.random() * imgUrls.length)]}')`;
-
-        // Add the picture to the body
-        document.body.appendChild(picture);
-
-        // Remove the picture after the animation ends
-        setTimeout(() => {
-            picture.remove();
-        }, 2000);
-    });
-</script>
-
+    <div class="container">
+        <!-- Image and description blocks -->
+        <div class="gallery-item">
+            <img src="morse2type/B32Cesca-2.png" alt="Image 1">
+            <p>Cesca Side Chair<br>
+Designed by Marcel Breuer<br>Marcel Breuer’s Cesca chair married traditional craftsmanship with industrial methods and materials to help make tubular steel furniture an international sensation and a modern institution. The cantilevered form exploits the possibilities unique to the material and gives the chair added flexibility and comfort. Offered in arm and armless versions with a fully upholstered seat and back, or with hand-woven cane inserts.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="morse2type/barcelona-2.png" alt="Image 2">
+            <p>Description for Image 2</p>
+        </div>
+        <div class="gallery-item">
+            <img src="morse2type/egg-2.png" alt="Image 3">
+            <p>Description for Image 3</p>
+        </div>
+        <div class="gallery-item">
+            <img src="morse2type/grandcomfort-2.png" alt="Image 4">
+            <p>Description for Image 4</p>
+        </div>
+        <div class="gallery-item">
+            <img src="morse2type/LCW-2.png" alt="Image 5">
+            <p>Description for Image 5</p>
+        </div>
+        <div class="gallery-item">
+            <img src="morse2type/papabear-2.png" alt="Image 6">
+            <p>Description for Image 6</p>
+        </div>
+        <div class="gallery-item">
+            <img src="morse2type/platner-2.png" alt="Image 7">
+            <p>Description for Image 7</p>
+        </div>
+        <div class="gallery-item">
+            <img src="morse2type/plywood-2.png" alt="Image 8">
+            <p>Description for Image 8</p>
+        </div>
+        <div class="gallery-item">
+            <img src="morse2type/stackingchair-2.png" alt="Image 9">
+            <p>Description for Image 9</p>
+        </div>
+        <div class="gallery-item">
+            <img src="morse2type/thonet-2.png" alt="Image 10">
+            <p>Description for Image 10</p>
+        </div>
+        <div class="gallery-item">
+            <img src="morse2type/transat-2.png" alt="Image 11">
+            <p>Description for Image 11</p>
+        </div>
+        <div class="gallery-item">
+            <img src="morse2type/tulip-2.png" alt="Image 12">
+            <p>Description for Image 12</p>
+        </div>
+    </div>
 </body>
 </html>
 
