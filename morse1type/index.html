@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Move Pictures</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<script>
+    console.log("Mouse event listener added");
+    document.addEventListener('mousemove', (event) => {
+        const imgUrls = [
+            'morse1type/egg-2.png',
+            'morse1type/platner-2.png',
+            'morse1type/stackingchair-2.png',
+            'morse1type/thonet-2.png'
+        ];
+
+        // Create a new picture element
+        const picture = document.createElement('div');
+        picture.classList.add('picture');
+
+        // Set the picture's position and background image
+        picture.style.left = `${event.pageX}px`;
+        picture.style.top = `${event.pageY}px`;
+        picture.style.backgroundImage = `url('${imgUrls[Math.floor(Math.random() * imgUrls.length)]}')`;
+
+        // Add the picture to the body
+        document.body.appendChild(picture);
+
+        // Remove the picture after the animation ends
+        setTimeout(() => {
+            picture.remove();
+        }, 2000);
+    });
+</script>
+
+</body>
+</html>
+

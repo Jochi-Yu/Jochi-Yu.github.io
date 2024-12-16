@@ -1,0 +1,34 @@
+@font-face{
+	font-family:'MorseCode';
+	src: url('MorseCode-Display_otf.woff2') format('woff2');
+	font-weight: 300;
+}
+
+@font-face{
+	font-family:'MorseCodeOutline';
+	src: url('MorseCode-Outline_otf.woff2') format('woff2');
+	font-weight: 400;
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.picture {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    animation: fade-out 2s ease forwards;
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
