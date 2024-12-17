@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="loader">
+        <h2>MORSE DISPLAY<br> &<br> Chairs of the Twentieth Century</h2>
+    </div>
+
     <div class="container">
         <!-- Image and description blocks -->
         <div class="gallery-item">
@@ -88,6 +92,21 @@
             cursor.style.top = `${e.clientY}px`;
         });
     </script>
+    <script>
+    // Wait for 3 seconds, then fade out the loader and show the main content
+    window.onload = function() {
+        setTimeout(function() {
+            const loader = document.getElementById('loader');
+            loader.classList.add('hidden'); // Add the 'hidden' class for fade-out effect
+
+            // After the fade-out effect, hide the loader and show main content
+            setTimeout(function() {
+                loader.style.display = 'none';
+                document.getElementById('container').style.display = 'block';
+            }, 1000); // Wait for the transition duration (1s)
+        }, 5000); // 3 seconds
+    };
+</script>
 
 </body>
 </html>
