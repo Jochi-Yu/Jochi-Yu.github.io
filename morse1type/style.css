@@ -6,9 +6,24 @@
 
 
 /* Body with padding around the page */
+h1{
+font-size: 25px
+
+
+
+}
+
+
+
+
 body {
+    font-family: 'MorseCode';
+    font-size: 20px;
     padding: 15px;
     background-color: #f9f9f9; /* Light background */
+p{
+    text-align:left;
+}
     
 /* Container to hold the grid layout */
 .container {
@@ -45,4 +60,3 @@ body {
 .gallery-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
