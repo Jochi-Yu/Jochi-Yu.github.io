@@ -75,6 +75,20 @@
 </p>
         </div>
     </div>
+    <div class="circle-cursor"></div>
+    <script src="circle-cursor.js"></script>
+    <script>
+        // Select the custom cursor element
+        const cursor = document.querySelector('.circle-cursor');
+
+        // Listen for mouse movement
+        document.addEventListener('mousemove', (e) => {
+            // Update the cursor's position based on mouse coordinates
+            cursor.style.left = `${e.clientX}px`;
+            cursor.style.top = `${e.clientY}px`;
+        });
+    </script>
+
 </body>
 </html>
 

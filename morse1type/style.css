@@ -11,6 +11,7 @@ font-size: 25px
 
 
 
+
 }
 
 
@@ -21,10 +22,20 @@ body {
     font-size: 20px;
     padding: 15px;
     background-color: #f9f9f9; /* Light background */
+    cursor: none; 
 p{
     text-align:left;
 }
-    
+.circle-cursor {
+            width: 20px; /* Diameter of the circle */
+            height: 20px; /* Diameter of the circle */
+            background-color: #74cffd; /* Circle color */
+            border-radius: 50%; /* Makes it a circle */
+            position: fixed; /* Keeps it fixed to the viewport */
+            pointer-events: none; /* Allows clicks to pass through */
+            transform: translate(-50%, -50%); /* Center the circle on the cursor */
+            z-index: 9999; /* Keeps it on top of all content */
+}
 /* Container to hold the grid layout */
 .container {
     display: grid;
@@ -35,7 +46,7 @@ p{
 /* Gallery item styling */
 .gallery-item {
     background-color: #ffffff; /* White background for each item */
-    border: 1px solid #ddd;
+    border: 0px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -46,7 +57,7 @@ p{
 .gallery-item img {
     width: 100%; /* Image fills the container */
     height: auto;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 0px solid #ddd;
     border-radius: 8px 8px 0 0;
 }
 
